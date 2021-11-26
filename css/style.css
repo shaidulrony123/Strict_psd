@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+ul.ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+
+:root{
+    --lato: 'Lato', sans-serif;
+    --hover: #15a4fa;
+}
+/* common css end */
+
+
+/* ************************************************
+                menu part start
+****************************************************/
+.main_menu ul li a{
+    color: #222222;
+    font-weight: 400;
+    font-size: 24px;
+    font-family: var(--lato);
+}
+.main_menu{
+    padding: 31px 0;
+    background: #f6f9f9;
+}
+/* ************************************************
+                menu part end
+****************************************************/
+
+
+/* ************************************************
+                banner part start
+****************************************************/
+#banner{
+    padding: 200px 0 ;
+}
+.banner_text h1{
+    color: #fff;
+    font-weight: 700;
+    font-size: 120px;
+    font-family: var(--lato);
+    position: relative;
+}
+.banner_text h1::after{
+    position: absolute;
+    content: '';
+    bottom: -15px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--hover);
+    /*! margin-top: 90px !important; */
+}
+.banner_text p{
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: var(--lato);
+    padding-top: 40px;
+}
+.banner_text a{
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: var(--lato);
+    padding: 20px 35px;
+    border: 1px solid var(--hover);
+    margin-top: 40px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.banner_text a:hover{
+    background: var(--hover);
+}
+.banner_text i{
+    color: #fff;
+    padding-top: 150px;
+    cursor: pointer;
+}
+/* ************************************************
+                banner part end
+****************************************************/
+
+
+/* ************************************************
+                design part start
+****************************************************/
+.design_text{
+  
+}
+#design{
+    background: #f6f9f9;
+}
+.design_text h3{
+    color: #2d3950;
+    font-weight: 400;
+    font-size: 40px;
+    font-family: var(--lato);
+    padding-top: 80px;
+}
+.design_text p{
+    color: #999999;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: var(--lato);
+    line-height: 32px;
+    padding-top: 18px;
+    padding-bottom: 100px;
+}
+
+/* ************************************************
+                design part end
+****************************************************/
+
+
+/* ************************************************
+                design_icon part start
+****************************************************/
+.design_logo{
+    padding: 65px 0;
+}
+.design_logo i{
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    background: var(--hover);
+    font-size: 40px;
+    color: #fff;
+}
+.design_logo h4{
+    color: #2d3950;
+    font-weight: 400;
+    font-size: 22px;
+    font-family: var(--lato);
+    padding-top: 25px;
+}
+.design_logo p{
+    color: #999999;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: var(--lato);
+    padding-top: 12px;
+    line-height: 22px;
+    width: 255px;
+    margin: 0 auto;
+}
+/* ************************************************
+                design_icon part end
+****************************************************/
+
+
+/* ************************************************
+                work part start
+****************************************************/
+#work{
+    background: #f6f9f9;
+}
+.work_heading{
+    padding: 80px 0;
+}
+.work_heading h4{
+    color: #2d3950;
+    font-size: 41px;
+    font-weight: 400;
+    font-family: var(--lato);
+}
+.work_heading p{
+    color: #909090;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: var(--lato);
+    padding-top: 7px;
+}
+#work{
+    padding-bottom: 116px;
+}
+.work_img:nth-child(1){
+    margin: 12px 0;
+}
+.work_img{
+    position: relative;
+}
+.work_img .overly{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(21, 162, 250, 0.9);
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.work_img .overly .one{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    -webkit-transform: translate(-50% , -50%);
+    -moz-transform: translate(-50% , -50%);
+    -ms-transform: translate(-50% , -50%);
+    -o-transform: translate(-50% , -50%);
+}
+.work_img .overly .one i{
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #fff;
+    margin: 0 3px;
+}
+.work_img:hover .overly{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+/* ************************************************
+                work part end
+****************************************************/
+
+
+/* ************************************************
+                contact part start
+****************************************************/
+#contact{
+    padding: 75px 0 98px;
+    position: relative;
+    z-index: 999;
+}
+#contact::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(45, 57, 80, 0.9);
+    z-index: -1;
+}
+.con_text h4{
+    color: #fff;
+    font-weight: 400;
+    font-size: 41px;
+}
+.con_text p{
+    color: #999999;
+    font-weight: 400;
+    font-size: 15px;
+    padding-top: 12px;
+}
+ form input{
+    width: 557px;
+    height: 60px;
+    padding-left: 20px;
+    border: 1px solid #999999;
+    background: none;
+    color: #fff;
+    margin-top: 50px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+textarea{
+    background: none;
+    color: #fff;
+    margin-top: 50px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding-left: 20px;
+    padding-top: 25px;
+}
+.btnc{
+    padding: 16px 50px;
+    border: 1px solid #15a4fa;
+    margin-top: 32px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.btn:hover{
+    background: #15a4fa;
+}
+/* ************************************************
+                contact part end
+****************************************************/
+
+
+/* ************************************************
+                footer part start
+****************************************************/
+footer{
+    background: #f6f9f9;
+    padding: 25px 0;
+}
+.footer_icon i{
+    padding: 13px 17px;
+    background: #15a4fa;
+    margin-left: 5px;
+    color: #fff;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.footer_text p{
+    color: #999;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    margin-top: 18px;
+    font-family: var(--lato);
+}
+
+/* ************************************************
+                footer part end
+****************************************************/
+
+
+/* ************************************************
+                menu part start
+****************************************************/
+
+/* ************************************************
+                menu part end
+****************************************************/
